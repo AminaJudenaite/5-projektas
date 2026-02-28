@@ -1,22 +1,189 @@
+div {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8e5e5;
+    font-family: 'Times New Roman', Times, serif;
+}
 
-/* 
-* Aprašyti skirtingas formos elementų (input, select) rėmelio spalvas.
-* Įvedimo laukelių pagal įvedimo laukelio tipą: text, email, password 
-*/
+input[type="text"] {
+    border: 1px solid #ffc6c6;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type="email"] {
+    border: 1px solid #ff91cd;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type="password"] {
+    border: 1px solid #f19cd1;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #fa3737;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #f53d87;
+    color: black;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    width: 100%;
+    background-color: #ffc0cc;
+    color: black;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input:nth-of-type(13) {
+    border: 2px solid rgb(144, 42, 228);
+}
+
+input:nth-last-of-type(2) {
+    font-weight: bold;
+}
+
+input:hover {
+    background-color: #e7fa79;
+}
+
+input[type="submit"]:hover {
+    background-color: #a82a5d;
+}
+
+input[type="reset"]:hover {
+    background-color: #fa7c8f;
+}
+select:hover{
+    background-color: #baf847;
+}
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+table {
+    width: 1000px;
+    margin: 50px auto;
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+table th, table td {
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+thead tr, tfoot tr {
+    background-color: #ceff3b;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #b6b6b6;
+}
+
+tbody tr:hover {
+    background-color: #88d7ff;
+}
+
+th:hover {
+    background-color: #88d7ff;
+}
 
 
-/* 
-* Aprašyti mygtukų Submit ir Reset fono spalvas 
-*/
+.to_do_list {
+    width: 1000px;
+    margin: 30px auto;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.to_do_list ul {
+    padding-left: 50px;
+}
+
+.to_do_list li {
+    margin: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.to_do_list li::before {
+    content: "★";
+    font-size: 30px;
+    margin-right: 10px;
+
+}
 
 
-/*keičiamos 13-o input elemento savybės */
 
+.text_list {
+   width: 1000px;
+    margin: 30px auto;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(255, 255, 255);
+}
 
-/*keičiamos priešpaskutinio input elemento savybės */
+.text_list li {
+    font-size: 18px;
+    color: black;
+}
 
+.text_list li:nth-child(4n+3) {
+    color: orange; 
+}
 
-/* 
-* Aprašyti įvedimo laukelių, dropdown sąrašo, mygtukų stilius taip, kad
-* užvedus pelės žymeklį - pasikeistų fono spalva
-*/
+.text_list li:nth-child(n+2):hover {
+    color: pink;
+}
+
+.links {
+    width: 1000px;
+    margin: 30px auto;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(255, 255, 255);
+}
+
+a[href*="cv"]::before {
+    content: "♛ ";
+}
+
+a[href*="darb"]::after {
+    content: " ♞";
+}
